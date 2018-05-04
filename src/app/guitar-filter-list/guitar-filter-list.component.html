@@ -1,3 +1,6 @@
-<p>
-  guitar-filter-list works!
-</p>
+<div class="col-4 float-left" *ngFor="let currentGuitarFilter of childGuitarFilterArray">
+  <div class="guitar-list-filter-component">
+    <img src="{{currentGuitarFilter.image}}" alt="{{currentGuitarFilter.title}}">
+    <p>{{currentGuitarFilter.title}}</p>
+  </div>
+</div>
