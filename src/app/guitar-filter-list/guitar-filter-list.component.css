@@ -1,3 +1,22 @@
+.guitar-list-filter-component {
+  background-color: #eee9c7;
+}
+
+.guitar-list-filter-component:hover {
+  cursor: pointer;
+}
+
 .guitar-list-filter-component img {
   width: 100%;
+  margin-bottom: 25px;
+}
+
+.guitar-list-filter-component h4 {
+  font-family: helvetica;
+  color: #eee9c7;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 100%;
+  transform: translate(-50%, -50%,);
 }
