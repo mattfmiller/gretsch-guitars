@@ -7,6 +7,7 @@ import { GuitarListComponent } from './guitar-list/guitar-list.component';
 import { GuitarFilterListComponent } from './guitar-filter-list/guitar-filter-list.component';
 import { NewsListComponent } from './news-list/news-list.component';
 import { SocialLinkListComponent } from './social-link-list/social-link-list.component';
+// import { FilterResults } from './filter-results'
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SocialLinkListComponent } from './social-link-list/social-link-list.com
     GuitarListComponent,
     GuitarFilterListComponent,
     NewsListComponent,
-    SocialLinkListComponent
+    SocialLinkListComponent,
+    // FilterResults
   ],
   imports: [
     BrowserModule
