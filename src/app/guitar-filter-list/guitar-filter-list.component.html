@@ -1,4 +1,4 @@
-<div class="col-4 float-left" *ngFor="let currentGuitarFilter of childGuitarFilterArray" (click)="guitarFilterClicked('gear')">
+<div class="col-4 float-left" *ngFor="let currentGuitarFilter of childGuitarFilterArray" (click)="guitarFilterClicked(currentGuitarFilter.title)">
   <div class="guitar-list-filter-component">
     <img src="{{currentGuitarFilter.image}}" alt="{{currentGuitarFilter.title}}">
     <p>{{currentGuitarFilter.title}}</p>

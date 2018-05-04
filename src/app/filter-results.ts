@@ -13,6 +13,12 @@ export class FilterResults implements PipeTransform {
       for(let i = 0; i < input.length; i++) {
           output.push(input[i]);
       }
+    } else if (desiredSort === "NEWEST MODELS") {
+      for(let i = 0; i < input.length; i++) {
+        if(input[i].newness === true) {
+          output.push(input[i]);
+        }
+      }
     }
     return output;
   }
