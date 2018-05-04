@@ -1,3 +1,13 @@
+.banner {
+  height: 650px;
+  overflow: hidden;
+}
+
+.banner img {
+  margin-top: -150px;
+  width: 100vw;
+}
+
 .header {
   background-image: url(http://www.fmicassets.com/platform/sites/live/gretsch/img/template/styled-header-bg-down.png);
   height: 170px;
