@@ -8,10 +8,10 @@
     <li>DEALER LOCATOR</li>
   </ul>
 </div>
-<div class="banner">
+<div class="banner" *ngIf='filterTerm === ""'>
   <img src="../assets/banner.jpg" alt="banner image">
 </div>
-<div class="guitar-filter-list">
+<div class="guitar-filter-list" *ngIf='filterTerm === ""'>
   <app-guitar-filter-list [childGuitarFilterArray]="masterGuitarFilterArray"></app-guitar-filter-list>
 </div>
 <div class="container">
