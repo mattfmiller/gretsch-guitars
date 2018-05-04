@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<div class="header">
   <img src="https://gretschguitars.com/assets/sites/gretsch/gretsch-logo.png" alt="Gretsch logo">
   <ul>
     <li (click)="runFilter('gear')">GEAR</li>
@@ -8,4 +8,6 @@
     <li>DEALER LOCATOR</li>
   </ul>
 </div>
-<app-guitar-list [childGuitarArray]="masterGuitarArray" [childFilterTerm]="filterTerm"></app-guitar-list>
+<div class="container">
+  <app-guitar-list [childGuitarArray]="masterGuitarArray" [childFilterTerm]="filterTerm"></app-guitar-list>
+</div>

@@ -1,4 +1,11 @@
 .guitar-list-component {
-  background-color: #f3e5b4;
   text-align: center;
+  height: 350px;
+  margin-top: 20px;
+}
+
+.guitar-list-component img {
+  background-color: #f3e5b4;
+  padding: 30px;
+  overflow: hidden;
 }
