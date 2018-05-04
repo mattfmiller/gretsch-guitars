@@ -18,7 +18,6 @@ export class AppComponent {
     new Guitar("G6134T-58 VINTAGE SELECT ’58 PENGUIN™ WITH BIGSBY®", "https://www.fmicassets.com/Damroot/GretschVert/10002/2400709805_gtr_frt_001_rr.png", false, false, false),
     new Guitar("G5230T ELECTROMATIC® JET™ FT SINGLE-CUT WITH BIGSBY®", "https://www.fmicassets.com/Damroot/GretschVert/10002/2507210506_gtr_frt_001_rr.png", true, false, false),
     new Guitar('G6131MY-CS CUSTOM SHOP MALCOLM YOUNG "SALUTE" JET™', "https://www.fmicassets.com/Damroot/GretschVert/10001/2410106821_gtr_frt_001_rr.png", false, false, true),
-
   ]
 
   masterGuitarFilterArray: GuitarFilter[] = [
