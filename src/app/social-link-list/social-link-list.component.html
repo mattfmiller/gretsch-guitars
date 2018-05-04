@@ -1,3 +1,6 @@
-<p>
-  social-link-list works!
-</p>
+<div class="col-3 float-left" *ngFor="let currentSocialLink of childSocialLinkArray" (click)="linkTo(currentsocialLink.link)">
+  <div class="guitar-list-filter-component">
+    <img src="{{currentSocialLink.image}}" alt="{{currentSocialLink.associattedApp}}">
+    <p>{{currentSocialLink.associatedApp}}</p>
+  </div>
+</div>

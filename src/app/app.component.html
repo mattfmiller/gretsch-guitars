@@ -14,6 +14,9 @@
 <div class="guitar-filter-list" *ngIf='filterTerm === ""'>
   <app-guitar-filter-list [childGuitarFilterArray]="masterGuitarFilterArray" (clickedGuitarFilterComponent)="runFilter($event)"></app-guitar-filter-list>
 </div>
+<div class="social-link-list">
+  <app-social-link-list [childSocialLinkArray]="masterSocialLinkArray"></app-social-link-list>
+</div>
 <div class="container">
   <app-guitar-list [childGuitarArray]="masterGuitarArray" [childFilterTerm]="filterTerm"></app-guitar-list>
 </div>

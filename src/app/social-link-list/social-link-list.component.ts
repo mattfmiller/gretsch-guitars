@@ -1,15 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { SocialLink } from '../models/social-link.model';
 
 @Component({
   selector: 'app-social-link-list',
   templateUrl: './social-link-list.component.html',
   styleUrls: ['./social-link-list.component.css']
 })
-export class SocialLinkListComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class SocialLinkListComponent {
+  @Input() childSocialLinkArray: SocialLink [];
 }
