@@ -1,3 +1,15 @@
+.jumbotron {
+  background-image: url(http://www.fmicassets.com/platform/sites/live/gretsch/img/template/styled-header-bg-down.png);
+  height: 170px;
+}
+.jumbotron img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  margin-bottom: 20px;
+}
+
 ul {
   list-style-type: none;
   text-align: center;
@@ -5,4 +17,16 @@ ul {
 
 li {
   display: inline;
+  margin: 0px 50px;
+  color: #eee8c6;
+  font: helvetica;
+}
+
+li:hover {
+  color: #cd4714;
+  cursor: pointer;
+}
+
+html {
+  background-color: #eee9c7;
 }
