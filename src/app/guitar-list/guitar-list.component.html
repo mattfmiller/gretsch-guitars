@@ -1,3 +1,3 @@
-<div class="col-4 float-left" *ngFor="let currentGuitar of childGuitarArray">
+<div class="col-4 float-left" *ngFor="let currentGuitar of childGuitarArray | filter:childFilterTerm">
   <img src="{{currentGuitar.image}}" alt="photo of {{currentGuitar.name}}"> <br> <p>{{currentGuitar.name}}</p>
 </div>

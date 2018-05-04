@@ -8,4 +8,5 @@ import { Guitar } from '../models/guitar.model'
 })
 export class GuitarListComponent {
   @Input() childGuitarArray: Guitar [];
+  @Input() childFilterTerm: string;
 }

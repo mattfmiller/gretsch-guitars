@@ -1,11 +1,11 @@
 <div class="jumbotron">
   <img src="https://gretschguitars.com/assets/sites/gretsch/gretsch-logo.png" alt="Gretsch logo">
   <ul>
-    <li>GEAR</li>
+    <li (click)="runFilter('gear')">GEAR</li>
     <li>NEWS</li>
     <li>CUSTOM SHOP</li>
     <li>SUPPORT</li>
     <li>DEALER LOCATOR</li>
   </ul>
 </div>
-<app-guitar-list [childGuitarArray]="masterGuitarArray"></app-guitar-list>
+<app-guitar-list [childGuitarArray]="masterGuitarArray" [childFilterTerm]="filterTerm"></app-guitar-list>
