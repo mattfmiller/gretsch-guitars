@@ -23,6 +23,7 @@ export class AppComponent {
   ]
 
   runFilter(desiredFilterTerm) {
+    console.log(this.filterTerm);
     this.filterTerm = desiredFilterTerm;
   }
 }

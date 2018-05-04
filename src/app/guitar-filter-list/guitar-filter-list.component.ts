@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { GuitarFilter } from '../models/guitar-filter.model';
 
 @Component({
@@ -8,5 +8,10 @@ import { GuitarFilter } from '../models/guitar-filter.model';
 })
 export class GuitarFilterListComponent {
   @Input() childGuitarFilterArray: GuitarFilter [];
+  @Output() clickedGuitarFilterComponent = new EventEmitter();
 
+  guitarFilterClicked(clickedFilterTerm: string) {
+    console.log(clickedFilterTerm);
+    this.clickedGuitarFilterComponent.emit(clickedFilterTerm);
+  }
 }
