@@ -27,7 +27,38 @@ This webpage is a clone of the Gretsch guitars webpage as of May 4, 2018. It wil
 | As a user I would like to view news related to Gretsch guitars | Input: Click "News" button  | Output: A list of recent news related to Gretsch |
 
 #### Structure
-
+src
+├── app
+│   ├── guitar-list
+│   │   ├── guitar-list.component.css
+│   │   ├── guitar-list.component.html
+│   │   ├── guitar-list.component.spec.ts
+│   │   ├── guitar-list.component.ts
+│   ├── guitar-filter-list
+│   │   ├── guitar-filter-list.component.css
+│   │   ├── guitar-filter-list.component.html
+│   │   ├── guitar-filter-list.component.spec.ts
+│   │   ├── guitar-filter-list.component.ts
+│   ├── models
+│   │   ├── guitar.model.ts
+│   │   ├── guitar-filter.model.ts
+│   │   ├── news.model.ts
+│   │   ├── social-link.model.ts
+│   ├── news-list
+│   │   ├── news-list.component.css
+│   │   ├── news-list.component.html
+│   │   ├── news-list.component.spec.ts
+│   │   ├── news-list.component.ts
+│   ├── social-link-list
+│   │   ├── social-link-list.component.css
+│   │   ├── social-link-list.component.html
+│   │   ├── social-link-list.component.spec.ts
+│   │   ├── social-link-list.component.ts
+│   ├── app.component.css
+│   ├── app.component.html
+│   ├── app.component.spec.ts
+│   ├── app.component.ts
+│   └── app.module.ts
 
 
 ## Known Bugs
