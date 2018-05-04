@@ -11,7 +11,6 @@ export class GuitarFilterListComponent {
   @Output() clickedGuitarFilterComponent = new EventEmitter();
 
   guitarFilterClicked(clickedFilterTerm: string) {
-    console.log(clickedFilterTerm);
     this.clickedGuitarFilterComponent.emit(clickedFilterTerm);
   }
 }
