@@ -29,16 +29,16 @@ This webpage is a clone of the Gretsch guitars webpage as of May 4, 2018. It wil
 #### Structure
 src
 ├── app
-│   ├── guitar-list
-│   │   ├── guitar-list.component.css
-│   │   ├── guitar-list.component.html
-│   │   ├── guitar-list.component.spec.ts
-│   │   ├── guitar-list.component.ts
 │   ├── guitar-filter-list
 │   │   ├── guitar-filter-list.component.css
 │   │   ├── guitar-filter-list.component.html
 │   │   ├── guitar-filter-list.component.spec.ts
 │   │   ├── guitar-filter-list.component.ts
+│   ├── guitar-list
+│   │   ├── guitar-list.component.css
+│   │   ├── guitar-list.component.html
+│   │   ├── guitar-list.component.spec.ts
+│   │   ├── guitar-list.component.ts
 │   ├── models
 │   │   ├── guitar.model.ts
 │   │   ├── guitar-filter.model.ts
