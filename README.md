@@ -1,4 +1,4 @@
-# GretschGuitars
+# Gretsch Guitars
 
 #### A clone of http://www.gretschguitars.com that allows users view Gretsch guitars and related news and information.
 
@@ -10,12 +10,12 @@ This webpage is a clone of the Gretsch guitars webpage as of May 4, 2018. It wil
 
 ## Setup/Installation Requirements
 
-* View program by cloning repository from https://github.com/mattfmiller/doctor-lookup
+* View program by cloning repository from https://github.com/mattfmiller/gretsch-guitars
 * Run `npm install` in project root directory in terminal.
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-* Run `ng test` to execute the unit tests via [Karma].
-* Run `ng e2e` to execute the end-to-end tests via [Protractor].
+* Run `ng test` to execute the unit tests via Karma.
+* Run `ng e2e` to execute the end-to-end tests via Protractor.
 
 #### Specifications
 
@@ -27,38 +27,38 @@ This webpage is a clone of the Gretsch guitars webpage as of May 4, 2018. It wil
 | As a user I would like to view news related to Gretsch guitars | Input: Click "News" button  | Output: A list of recent news related to Gretsch |
 
 #### Structure
-src
-├── app
-│   ├── guitar-filter-list
-│   │   ├── guitar-filter-list.component.css
-│   │   ├── guitar-filter-list.component.html
-│   │   ├── guitar-filter-list.component.spec.ts
-│   │   ├── guitar-filter-list.component.ts
-│   ├── guitar-list
-│   │   ├── guitar-list.component.css
-│   │   ├── guitar-list.component.html
-│   │   ├── guitar-list.component.spec.ts
-│   │   ├── guitar-list.component.ts
-│   ├── models
-│   │   ├── guitar.model.ts
-│   │   ├── guitar-filter.model.ts
-│   │   ├── news.model.ts
-│   │   ├── social-link.model.ts
-│   ├── news-list
-│   │   ├── news-list.component.css
-│   │   ├── news-list.component.html
-│   │   ├── news-list.component.spec.ts
-│   │   ├── news-list.component.ts
-│   ├── social-link-list
-│   │   ├── social-link-list.component.css
-│   │   ├── social-link-list.component.html
-│   │   ├── social-link-list.component.spec.ts
-│   │   ├── social-link-list.component.ts
-│   ├── app.component.css
-│   ├── app.component.html
-│   ├── app.component.spec.ts
-│   ├── app.component.ts
-│   └── app.module.ts
+src <br>
+├ app <br>
+│   ├ guitar-filter-list <br>
+│   │   ├ guitar-filter-list.component.css <br>
+│   │   ├ guitar-filter-list.component.html <br>
+│   │   ├ guitar-filter-list.component.spec.ts <br>
+│   │   ├ guitar-filter-list.component.ts <br>
+│   ├ guitar-list <br>
+│   │   ├ guitar-list.component.css <br>
+│   │   ├ guitar-list.component.html <br>
+│   │   ├ guitar-list.component.spec.ts <br>
+│   │   ├ guitar-list.component.ts <br>
+│   ├ models <br>
+│   │   ├─guitar.model.ts <br>
+│   │   ├ guitar-filter.model.ts <br>
+│   │   ├ news.model.ts <br>
+│   │   ├ social-link.model.ts <br>
+│   ├ news-list <br>
+│   │   ├ news-list.component.css <br>
+│   │   ├ news-list.component.html <br>
+│   │   ├ news-list.component.spec.ts <br>
+│   │   ├ news-list.component.ts <br>
+│   ├ social-link-list <br>
+│   │   ├ social-link-list.component.css <br>
+│   │   ├ social-link-list.component.html <br>
+│   │   ├ social-link-list.component.spec.ts <br>
+│   │   ├ social-link-list.component.ts <br>
+│   ├ app.component.css <br>
+│   ├ app.component.html <br>
+│   ├ app.component.spec.ts <br>
+│   ├ app.component.ts <br>
+│   └ app.module.ts <br>
 
 
 ## Known Bugs
@@ -72,7 +72,7 @@ For support, contact: matt.f.miller@live.com
 ## Technologies Used
 
 * HTML
-* CSS _(Bootstrap 4.1)_
+* CSS _(Bootstrap 4.1.1)_
 * JavaScript _(jQuery 3.2.1)_
 * Node.js
 * npm
