@@ -1,12 +1,12 @@
 # Gretsch Guitars
 
-#### A clone of http://www.gretschguitars.com that allows users view Gretsch guitars and related news and information.
+#### A clone of http://www.gretschguitars.com that allows users view Gretsch guitars.
 
 #### By _**Matt Miller**_
 
 ## Description
 
-This webpage is a clone of the Gretsch guitars webpage as of May 4, 2018. It will allow users to view a list of Gretsch guitar models filtered by various attributes such as body style, newness, and artist affiliation. I will also display news and custom shop information.
+This webpage is a clone of the Gretsch guitars webpage as of May 4, 2018. It will allow users to view a list of Gretsch guitar models filtered by various attributes such as body style, newness, and artist affiliation.
 
 ## Setup/Installation Requirements
 
@@ -21,10 +21,9 @@ This webpage is a clone of the Gretsch guitars webpage as of May 4, 2018. It wil
 
 | Specification | Input | Output |
 | --- | --- | --- |
-| As a user I would like to view all Gretsch guitars | Input: Click "Gear" button  | Output: A list of all Gretsch guitars |
-| As a user I would like to view new Gretsch guitars | Input: click "Newest Models" button  | Output: A list of all new guitars |
-| As a user I would like to access the Gretsch Instagram page | Input: Click "Instagram" button | Output: linked to Gretsch Guitars Instagram |
-| As a user I would like to view news related to Gretsch guitars | Input: Click "News" button  | Output: A list of recent news related to Gretsch |
+| The program should display all Gretsch guitars | Input: Click "Gear" button  | Output: A list of all Gretsch guitars |
+| The program should display all new Gretsch guitars | Input: click "Newest Models" button  | Output: A list of all new Gretsch guitars |
+| The program should link to the Gretsch Instagram page | Input: Click "Instagram" button | Output: Gretsch Guitars Instagram page opens in new window |
 
 #### Structure
 src <br>
@@ -42,13 +41,7 @@ src <br>
 │   ├ models <br>
 │   │   ├─guitar.model.ts <br>
 │   │   ├ guitar-filter.model.ts <br>
-│   │   ├ news.model.ts <br>
 │   │   ├ social-link.model.ts <br>
-│   ├ news-list <br>
-│   │   ├ news-list.component.css <br>
-│   │   ├ news-list.component.html <br>
-│   │   ├ news-list.component.spec.ts <br>
-│   │   ├ news-list.component.ts <br>
 │   ├ social-link-list <br>
 │   │   ├ social-link-list.component.css <br>
 │   │   ├ social-link-list.component.html <br>
