@@ -19,11 +19,23 @@ This webpage is a clone of the Gretsch guitars webpage as of May 4, 2018. It wil
 
 #### Specifications
 
-| Specification | Input | Output |
+| Implemented Feature | Input | Output |
 | --- | --- | --- |
-| The program should display all Gretsch guitars | Input: Click "Gear" button  | Output: A list of all Gretsch guitars |
-| The program should display all new Gretsch guitars | Input: click "Newest Models" button  | Output: A list of all new Gretsch guitars |
-| The program should link to the Gretsch Instagram page | Input: Click "Instagram" button | Output: Gretsch Guitars Instagram page opens in new window |
+| As a user I would like to view all Gretsch guitars | Input: Click "Gear" button on nav bar | Output: A list of all Gretsch guitars |
+| As a user I would like to view all new Gretsch guitars | Input: click "Newest Models" button  | Output: A list of all new Gretsch guitars |
+| As a user I would like to view all hollowbody Gretsch guitars | Input: click "The Big Body Soound" button  | Output: A list of all hollowbody Gretsch guitars |
+| As a user I would like to view all artist model Gretsch guitars | Input: click "Artist Models" button  | Output: A list of all artist model Gretsch guitars |
+| As a user I would like to link to the Gretsch Instagram page | Input: Click "Instagram" button | Output: Gretsch Guitars Instagram page opens in new window |
+| As a user I would like to link to the Gretsch Facebook page | Input: Click "Facebook" button | Output: Gretsch Guitars Facebook page opens in new window |
+| As a user I would like to link to the Gretsch YouTube page | Input: Click "YouTube" button | Output: Gretsch Guitars YouTube page opens in new window |
+| As a user I would like to link to the Gretsch Artists page | Input: Click "Artists" button | Output: Gretsch Guitars Artists page opens in new window |
+
+| Planned Feature | Input | Output |
+| --- | --- | --- |
+| As a user I would like to click on a guitar list item to view further details of the guitar | Input: Click guitar item in list | Output: The details page of the selected guitar is displayed |
+| As a user I would like to view news related to Gretsch guitars | Input: Click "News" button on nav bar | Output: A list of recent Gretsch news |
+| As a user I would like to view information about the Gretsch Custom Shop | Input: Click "Custom Shop" button on nav bar | Output: Information about the Gretsch Custom Shop and a list of recent Gretsch Custom Shop guitars |
+
 
 #### Structure
 src <br>
@@ -38,6 +50,11 @@ src <br>
 │   │   ├ guitar-list.component.html <br>
 │   │   ├ guitar-list.component.spec.ts <br>
 │   │   ├ guitar-list.component.ts <br>
+│   ├ guitar <br>
+│   │   ├ guitar.component.css <br>
+│   │   ├ guitar.component.html <br>
+│   │   ├ guitar.component.spec.ts <br>
+│   │   ├ guitar.component.ts <br>
 │   ├ models <br>
 │   │   ├─guitar.model.ts <br>
 │   │   ├ guitar-filter.model.ts <br>
