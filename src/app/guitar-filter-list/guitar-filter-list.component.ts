@@ -7,8 +7,14 @@ import { GuitarFilter } from '../models/guitar-filter.model';
   styleUrls: ['./guitar-filter-list.component.css']
 })
 export class GuitarFilterListComponent {
-  @Input() childGuitarFilterArray: GuitarFilter [];
+  // @Input() childGuitarFilterArray: GuitarFilter [];
   @Output() clickedGuitarFilterComponent = new EventEmitter();
+
+  childGuitarFilterArray: GuitarFilter[] = [
+    new GuitarFilter("NEWEST MODELS", "SEE THE LATEST", "../assets/newest.jpg"),
+    new GuitarFilter("THE BIG BODY SOUND", "VIEW HOLLOW BODIES", "../assets/hollow.jpg"),
+    new GuitarFilter("ARTIST MODELS", "VIEW ARTIST SIGNATURES", "../assets/artist.jpg"),
+  ];
 
   guitarFilterClicked(clickedFilterTerm: string) {
     this.clickedGuitarFilterComponent.emit(clickedFilterTerm);

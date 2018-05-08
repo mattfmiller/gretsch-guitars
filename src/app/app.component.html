@@ -12,9 +12,10 @@
   <div class="banner" *ngIf='filterTerm === ""'>
     <img src="../assets/banner.jpg" alt="banner image">
   </div>
-  <div class="guitar-filter-list" *ngIf='filterTerm === ""'>
+  <router-outlet></router-outlet>
+  <!-- <div class="guitar-filter-list" *ngIf='filterTerm === ""'>
     <app-guitar-filter-list [childGuitarFilterArray]="masterGuitarFilterArray" (clickedGuitarFilterComponent)="runFilter($event)"></app-guitar-filter-list>
-  </div>
+  </div> -->
   <div class="social-link-list" *ngIf='filterTerm === ""'>
     <app-social-link-list [childSocialLinkArray]="masterSocialLinkArray"></app-social-link-list>
   </div>

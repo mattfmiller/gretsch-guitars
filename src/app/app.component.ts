@@ -20,11 +20,11 @@ export class AppComponent {
     new Guitar('G6131MY-CS CUSTOM SHOP MALCOLM YOUNG "SALUTE" JET™', "https://www.fmicassets.com/Damroot/GretschVert/10001/2410106821_gtr_frt_001_rr.png", false, false, true),
   ]
 
-  masterGuitarFilterArray: GuitarFilter[] = [
-    new GuitarFilter("NEWEST MODELS", "SEE THE LATEST", "../assets/newest.jpg"),
-    new GuitarFilter("THE BIG BODY SOUND", "VIEW HOLLOW BODIES", "../assets/hollow.jpg"),
-    new GuitarFilter("ARTIST MODELS", "VIEW ARTIST SIGNATURES", "../assets/artist.jpg"),
-  ]
+  // masterGuitarFilterArray: GuitarFilter[] = [
+  //   new GuitarFilter("NEWEST MODELS", "SEE THE LATEST", "../assets/newest.jpg"),
+  //   new GuitarFilter("THE BIG BODY SOUND", "VIEW HOLLOW BODIES", "../assets/hollow.jpg"),
+  //   new GuitarFilter("ARTIST MODELS", "VIEW ARTIST SIGNATURES", "../assets/artist.jpg"),
+  // ]
 
   masterSocialLinkArray: SocialLink[] = [
     new SocialLink("INSTAGRAM", "../assets/instagram.jpg", "https://www.instagram.com/officialgretsch/"),
