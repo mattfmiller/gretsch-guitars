@@ -21,6 +21,6 @@ export class GuitarFilterListComponent implements OnInit {
   }
 
   goToFilteredGuitarList(clickedGuitarFilter: GuitarFilter) {
-    this.router.navigate(['guitar-list', clickedGuitarFilter.filterTerm]);
+    this.router.navigate(['guitarList', clickedGuitarFilter.filterTerm]);
   }
 }
