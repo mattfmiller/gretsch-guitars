@@ -3,7 +3,7 @@
 </div>
 <div class="col-4 float-left" *ngFor="let currentGuitarFilter of guitarFilters | async" (click)="goToFilteredGuitarList(currentGuitarFilter)">
   <div class="guitar-list-filter-component">
-    <img src="{{currentGuitarFilter.image}}" alt="{{currentGuitarFilter.title}}">
+    <a routerLink="guitarList/{{currentGuitarFilter.filterTerm}}"><img src="{{currentGuitarFilter.image}}" alt="{{currentGuitarFilter.title}}"></a>
     <h4>{{currentGuitarFilter.title}}</h4>
   </div>
 </div>

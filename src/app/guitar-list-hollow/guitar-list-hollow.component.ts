@@ -3,16 +3,14 @@ import { Guitar } from '../models/guitar.model';
 import { Router } from '@angular/router';
 import { GuitarService } from '../guitar.service';
 import { FirebaseListObservable } from 'angularfire2/database';
-// import { ActivatedRoute, Params } from '@angular/router';
-// import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-guitar-list',
-  templateUrl: './guitar-list.component.html',
-  styleUrls: ['./guitar-list.component.css'],
+  selector: 'app-guitar-list-hollow',
+  templateUrl: './guitar-list-hollow.component.html',
+  styleUrls: ['./guitar-list-hollow.component.css'],
   providers: [GuitarService]
 })
-export class GuitarListComponent implements OnInit{
+export class GuitarListHollowComponent implements OnInit {
 
   constructor(private router: Router, private guitarService: GuitarService){}
   guitars: FirebaseListObservable<any[]>;
@@ -20,7 +18,7 @@ export class GuitarListComponent implements OnInit{
   // guitarsToDisplayByCategory;
 
   ngOnInit(){
-    this.guitars = this.guitarService.getGuitars();
+    this.guitars = this.guitarService.getHollowGuitars();
     // this.route.params.forEach((urlParameters) => {
     //   this.guitarCategory = urlParameters['category'];
     // });

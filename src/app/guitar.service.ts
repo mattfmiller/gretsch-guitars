@@ -20,6 +20,16 @@ export class GuitarService {
     return this.guitars;
   }
 
+  getHollowGuitars() {
+    console.log("Hollow")
+    return this.guitars = this.database.list('guitars/', {
+      query: {
+        orderByChild: "catagory",
+        equalTo: "hollowbody"
+      }
+    });
+  }
+
   getGuitarFilters() {
     return this.guitarFilters;
   }
