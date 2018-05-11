@@ -16,7 +16,7 @@ const appRoutes: Routes = [
     outlet: 'socialLinkList'
   },
   {
-    path: 'guitar-list',
+    path: 'guitars',
     component: GuitarListComponent
   }
 ];

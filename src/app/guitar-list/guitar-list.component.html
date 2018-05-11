@@ -1,6 +1,6 @@
-<div class="col-4 float-left" *ngFor="let currentGuitar of childGuitarArray | filter:childFilterTerm">
+<div class="col-4 float-left" *ngFor="let currentGuitar of guitarArray">
   <div class="guitar-list-component">
-    <img src="{{currentGuitar.image}}" alt="photo of {{currentGuitar.name}}"><br> 
+    <img src="{{currentGuitar.image}}" alt="photo of {{currentGuitar.name}}"><br>
     <p>{{currentGuitar.name}}</p>
   </div>
 </div>

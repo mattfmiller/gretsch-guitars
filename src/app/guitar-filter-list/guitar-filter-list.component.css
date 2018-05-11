@@ -20,3 +20,14 @@
   width: 100%;
   transform: translate(-50%, -50%,);
 }
+
+.banner {
+  height: 650px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.banner img {
+  margin-top: -50px;
+  width: 100vw;
+}

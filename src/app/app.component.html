@@ -2,19 +2,16 @@
   <div class="header">
     <a routerLink=""><img src="https://gretschguitars.com/assets/sites/gretsch/gretsch-logo.png" alt="Gretsch logo"></a>
     <ul>
-      <li (click)="runFilter('gear')"><a routerLink="guitar-list">GEAR</a></li>
+      <li (click)="runFilter('gear')"><a routerLink="guitars">GEAR</a></li>
       <li>NEWS</li>
       <li>CUSTOM SHOP</li>
       <li>SUPPORT</li>
       <li>DEALER LOCATOR</li>
     </ul>
   </div>
-  <div class="banner" *ngIf='filterTerm === ""'>
-    <img src="../assets/banner.jpg" alt="banner image">
-  </div>
   <router-outlet name='guitarFilterList'></router-outlet>
   <router-outlet name='socialLinkList'></router-outlet>
-  <!-- <router-outlet></router-outlet> -->
+  <router-outlet></router-outlet>
   <!-- <div class="guitar-filter-list" *ngIf='filterTerm === ""'>
     <app-guitar-filter-list [childGuitarFilterArray]="masterGuitarFilterArray" (clickedGuitarFilterComponent)="runFilter($event)"></app-guitar-filter-list>
   </div> -->

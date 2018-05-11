@@ -2,7 +2,7 @@
   background-color: #EEE8C6;
 }
 
-.banner {
+/* .banner {
   height: 650px;
   overflow: hidden;
   margin-bottom: 25px;
@@ -11,7 +11,7 @@
 .banner img {
   margin-top: -50px;
   width: 100vw;
-}
+} */
 
 .header {
   background-image: url(http://www.fmicassets.com/platform/sites/live/gretsch/img/template/styled-header-bg-down.png);
