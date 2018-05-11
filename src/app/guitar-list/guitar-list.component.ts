@@ -27,7 +27,7 @@ export class GuitarListComponent implements OnInit{
     this.guitars = this.guitarService.getGuitars();
   }
 
-  goToDetailPage(clickedGuitar: Guitar) {
-    this.router.navigate(['guitars', clickedGuitar.id]);
+  goToDetailPage(clickedGuitar) {
+    this.router.navigate(['guitars', clickedGuitar.$key]);
   }
 }

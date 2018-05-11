@@ -27,8 +27,8 @@ export class GuitarService {
     return this.socialLinks;
   }
 
-  getGuitarById(guitarId: number){
-
+  getGuitarById(guitarId: string){
+    return this.database.object('guitars/' + guitarId)
   }
 
 }

@@ -12,16 +12,16 @@ import { FirebaseListObservable } from 'angularfire2/database';
   providers: [GuitarService]
 })
 export class GuitarDetailComponent implements OnInit {
-  guitarId: number = null;
-  guitarToDisplay: Guitar;
+  guitarId: string;
+  guitarToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private guitarService: GuitarService) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.guitarId = parseInt(urlParameters['id']);
+      this.guitarId = urlParameters['id'];
     });
-    // this.guitarToDisplay = this.guitarService.getGuitarById(this.guitarId);
+    this.guitarToDisplay = this.guitarService.getGuitarById(this.guitarId);
   }
 
 }
