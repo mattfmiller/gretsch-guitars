@@ -43,6 +43,7 @@ This webpage is a clone of the Gretsch guitars webpage as of May 11, 2018. It wi
 
 | Planned Feature | Input | Output |
 | --- | --- | --- |
+| As a user I would like to be able to navigate to a guitar and then click on categories to view guitar specs | Input: Click "Body" tab | Output: Table displays guitar body specs such as material, finish, binding, etc... |
 | As a user I would like to view news related to Gretsch guitars | Input: Click "News" button on nav bar | Output: A list of recent Gretsch news |
 | As a user I would like to view information about the Gretsch Custom Shop | Input: Click "Custom Shop" button on nav bar | Output: Information about the Gretsch Custom Shop and a list of recent Gretsch Custom Shop guitars |
 | As a user I would like to view Gretsch Guitar support article | Input: Click "Support" button on nav bar | Output: Information about the Gretsch Custom Shop and a list of recent Gretsch Guitars support articles |
