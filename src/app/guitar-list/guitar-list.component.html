@@ -1,4 +1,4 @@
-<div class="col-4 float-left" *ngFor="let currentGuitar of guitarArray">
+<div class="col-4 float-left" *ngFor="let currentGuitar of guitars" (click)="goToDetailPage(currentGuitar)">
   <div class="guitar-list-component">
     <img src="{{currentGuitar.image}}" alt="photo of {{currentGuitar.name}}"><br>
     <p>{{currentGuitar.name}}</p>
