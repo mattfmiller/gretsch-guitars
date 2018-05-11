@@ -29,4 +29,9 @@ export class GuitarFilterListComponent implements OnInit {
   ngOnInit() {
     this.guitarFilters = this.guitarService.getGuitarFilters();
   }
+
+  passFilter(filterTerm: string) {
+    this.guitarService.setFilter(filterTerm);
+    console.log(filterTerm)
+  }
 }
