@@ -13,13 +13,6 @@ export class SocialLinkListComponent implements OnInit{
   constructor(private guitarService: GuitarService){}
   socialLinks: FirebaseListObservable<any[]>;
 
-  // masterSocialLinkArray: SocialLink[] = [
-  //   new SocialLink("INSTAGRAM", "../assets/instagram.jpg", "https://www.instagram.com/officialgretsch/"),
-  //   new SocialLink("FACEBOOK", "../assets/facebook.jpg", "https://www.facebook.com/GretschGuitars"),
-  //   new SocialLink("YOUTUBE", "../assets/youtube.jpg", "https://www.youtube.com/user/gretschguitars/"),
-  //   new SocialLink("ARTISTS", "../assets/artists.jpg", "https://gretschguitars.com/artists")
-  // ]
-
   ngOnInit() {
     this.socialLinks = this.guitarService.getSocialLinks();
   }

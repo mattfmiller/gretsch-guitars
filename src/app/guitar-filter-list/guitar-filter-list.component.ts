@@ -19,8 +19,4 @@ export class GuitarFilterListComponent implements OnInit {
   ngOnInit() {
     this.guitarFilters = this.guitarService.getGuitarFilters();
   }
-
-  goToFilteredGuitarList(clickedGuitarFilter: GuitarFilter) {
-    this.router.navigate(['filteredGuitarList', clickedGuitarFilter.filterTerm]);
-  }
 }

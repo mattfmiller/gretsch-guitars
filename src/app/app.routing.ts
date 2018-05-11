@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { GuitarListComponent } from './guitar-list/guitar-list.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { GuitarDetailComponent } from './guitar-detail/guitar-detail.component';
-import { FilteredGuitarListComponent } from './filtered-guitar-list/filtered-guitar-list.component';
 import { GuitarListHollowComponent } from './guitar-list-hollow/guitar-list-hollow.component';
 import { GuitarListArtistComponent } from './guitar-list-artist/guitar-list-artist.component';
 import { GuitarListNewComponent } from './guitar-list-new/guitar-list-new.component';
@@ -16,10 +15,6 @@ const appRoutes: Routes = [
   {
     path: 'guitarList',
     component: GuitarListComponent
-  },
-  {
-    path: 'filteredGuitarList/:category',
-    component: FilteredGuitarListComponent
   },
   {
     path: 'guitars/:id',

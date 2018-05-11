@@ -4,14 +4,12 @@ import { AppComponent } from './app.component';
 import { GuitarListComponent } from './guitar-list/guitar-list.component';
 import { GuitarFilterListComponent } from './guitar-filter-list/guitar-filter-list.component';
 import { SocialLinkListComponent } from './social-link-list/social-link-list.component';
-// import { FilterResults } from './filter-results'
 import { routing } from './app.routing';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { GuitarDetailComponent } from './guitar-detail/guitar-detail.component';
-import { FilteredGuitarListComponent } from './filtered-guitar-list/filtered-guitar-list.component';
 import { GuitarListHollowComponent } from './guitar-list-hollow/guitar-list-hollow.component';
 import { GuitarListArtistComponent } from './guitar-list-artist/guitar-list-artist.component';
 import { GuitarListNewComponent } from './guitar-list-new/guitar-list-new.component';
@@ -30,10 +28,8 @@ export const firebaseConfig = {
     GuitarListComponent,
     GuitarFilterListComponent,
     SocialLinkListComponent,
-    // FilterResults,
     WelcomeComponent,
     GuitarDetailComponent,
-    FilteredGuitarListComponent,
     GuitarListHollowComponent,
     GuitarListArtistComponent,
     GuitarListNewComponent
