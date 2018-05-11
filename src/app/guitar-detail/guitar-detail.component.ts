@@ -21,7 +21,7 @@ export class GuitarDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.guitarId = parseInt(urlParameters['id']);
     });
-    this.guitarToDisplay = this.guitarService.getGuitarById(this.guitarId);
+    // this.guitarToDisplay = this.guitarService.getGuitarById(this.guitarId);
   }
 
 }
