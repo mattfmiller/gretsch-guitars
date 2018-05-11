@@ -6,11 +6,21 @@
 
 ## Description
 
-This webpage is a clone of the Gretsch guitars webpage as of May 4, 2018. It will allow users to view a list of Gretsch guitar models filtered by various attributes such as body style, newness, and artist affiliation.
+This webpage is a clone of the Gretsch guitars webpage as of May 11, 2018. It will allow users to view a list of Gretsch guitar models filtered by various attributes such as body style, newness, and artist affiliation.
 
 ## Setup/Installation Requirements
 
-* View program by cloning repository from https://github.com/mattfmiller/gretsch-guitars
+* View program by visiting:
+* To modify program, clone repository from https://github.com/mattfmiller/gretsch-guitars
+* Create a firebase database using the sample-guitars.json file located in the root directory.
+* Using your firebase database credentials, create a file `/src/app/api-keys.ts` of the form:<br>
+    export let masterFirebaseConfig = {
+      apiKey: "xxxx",
+      authDomain: "xxxx.firebaseapp.com",
+      databaseURL: "https://xxxx.firebaseio.com",
+      storageBucket: "xxxx.appspot.com",
+      messagingSenderId: "xxxx"
+    };
 * Run `npm install` in project root directory in terminal.
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 * Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
@@ -29,17 +39,24 @@ This webpage is a clone of the Gretsch guitars webpage as of May 4, 2018. It wil
 | As a user I would like to link to the Gretsch Facebook page | Input: Click "Facebook" button | Output: Gretsch Guitars Facebook page opens in new window |
 | As a user I would like to link to the Gretsch YouTube page | Input: Click "YouTube" button | Output: Gretsch Guitars YouTube page opens in new window |
 | As a user I would like to link to the Gretsch Artists page | Input: Click "Artists" button | Output: Gretsch Guitars Artists page opens in new window |
+| As a user I would like to click on a guitar list item to view further details of the guitar | Input: Click guitar item in list | Output: The details page of the selected guitar is displayed |
 
 | Planned Feature | Input | Output |
 | --- | --- | --- |
-| As a user I would like to click on a guitar list item to view further details of the guitar | Input: Click guitar item in list | Output: The details page of the selected guitar is displayed |
 | As a user I would like to view news related to Gretsch guitars | Input: Click "News" button on nav bar | Output: A list of recent Gretsch news |
 | As a user I would like to view information about the Gretsch Custom Shop | Input: Click "Custom Shop" button on nav bar | Output: Information about the Gretsch Custom Shop and a list of recent Gretsch Custom Shop guitars |
+| As a user I would like to view Gretsch Guitar support article | Input: Click "Support" button on nav bar | Output: Information about the Gretsch Custom Shop and a list of recent Gretsch Guitars support articles |
+
 
 
 #### Structure
 src <br>
 ├ app <br>
+│   ├ guitar-detail <br>
+│   │   ├ guitar-detail.component.css <br>
+│   │   ├ guitar-detail.component.html <br>
+│   │   ├ guitar-detail.component.spec.ts <br>
+│   │   ├ guitar-detail.component.ts <br>
 │   ├ guitar-filter-list <br>
 │   │   ├ guitar-filter-list.component.css <br>
 │   │   ├ guitar-filter-list.component.html <br>
@@ -50,11 +67,21 @@ src <br>
 │   │   ├ guitar-list.component.html <br>
 │   │   ├ guitar-list.component.spec.ts <br>
 │   │   ├ guitar-list.component.ts <br>
-│   ├ guitar <br>
-│   │   ├ guitar.component.css <br>
-│   │   ├ guitar.component.html <br>
-│   │   ├ guitar.component.spec.ts <br>
-│   │   ├ guitar.component.ts <br>
+│   ├ guitar-list-artist <br>
+│   │   ├ guitar-list-artist.component.css <br>
+│   │   ├ guitar-list-artist.component.html <br>
+│   │   ├ guitar-list-artist.component.spec.ts <br>
+│   │   ├ guitar-list-artist.component.ts <br>
+│   ├ guitar-list-hollow <br>
+│   │   ├ guitar-list-hollow.component.css <br>
+│   │   ├ guitar-list-hollow.component.html <br>
+│   │   ├ guitar-list-hollow.component.spec.ts <br>
+│   │   ├ guitar-list-hollow.component.ts <br>
+│   ├ guitar-list-new <br>
+│   │   ├ guitar-list-new.component.css <br>
+│   │   ├ guitar-list-new.component.html <br>
+│   │   ├ guitar-list-new.component.spec.ts <br>
+│   │   ├ guitar-list-new.component.ts <br>
 │   ├ models <br>
 │   │   ├─guitar.model.ts <br>
 │   │   ├ guitar-filter.model.ts <br>
@@ -64,16 +91,25 @@ src <br>
 │   │   ├ social-link-list.component.html <br>
 │   │   ├ social-link-list.component.spec.ts <br>
 │   │   ├ social-link-list.component.ts <br>
+│   ├ welcome <br>
+│   │   ├ welcome.component.css <br>
+│   │   ├ welcome.component.html <br>
+│   │   ├ welcome.component.spec.ts <br>
+│   │   ├ welcome.component.ts <br>
 │   ├ app.component.css <br>
 │   ├ app.component.html <br>
 │   ├ app.component.spec.ts <br>
 │   ├ app.component.ts <br>
 │   └ app.module.ts <br>
+│   └ app.routing.ts <br>
+│   └ app.service.spec.ts <br>
+│   └ app.service.ts <br>
 
 
 ## Known Bugs
 
-N/A
+* Guitars are missing some data such as price.
+* Not all nav bar buttons route to related components.
 
 ## Support and contact details
 
