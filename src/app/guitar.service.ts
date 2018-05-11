@@ -11,24 +11,13 @@ export class GuitarService {
 
 
   constructor(private database: AngularFireDatabase) {
-    // this.guitars = database.list('guitars');
+    this.guitars = database.list('guitars');
     this.guitarFilters = database.list('guitar-filters');
     this.socialLinks = database.list('social-links');
   }
 
   getGuitars() {
-    if (this.currentFilterTerm === "") {
-      console.log("none");
-      return this.guitars = this.database.list('guitars');
-    } else if (this.currentFilterTerm === "THE BIG BODY SOUND") {
-      console.log("hollow")
-      return this.guitars = this.database.list('guitars', {
-        query: {
-          orderByChild: 'category',
-          equalTo: 'hollow'
-        }
-      });
-    }
+    return this.guitars 
   }
 
   getGuitarFilters() {
@@ -41,10 +30,6 @@ export class GuitarService {
 
   getGuitarById(guitarId: string){
     return this.database.object('guitars/' + guitarId)
-  }
-
-  setFilter(filterTerm) {
-    this.currentFilterTerm = filterTerm;
   }
 
 }
