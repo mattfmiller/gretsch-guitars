@@ -18,8 +18,10 @@ export class GuitarService {
 
   getGuitars() {
     if (this.currentFilterTerm === "") {
+      console.log("none");
       return this.guitars = this.database.list('guitars');
-    } else if (this.currentFilterTerm === "hollow") {
+    } else if (this.currentFilterTerm === "THE BIG BODY SOUND") {
+      console.log("hollow")
       return this.guitars = this.database.list('guitars', {
         query: {
           orderByChild: 'category',
