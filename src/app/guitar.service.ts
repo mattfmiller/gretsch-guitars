@@ -7,7 +7,7 @@ export class GuitarService {
   guitars: FirebaseListObservable<any[]>;
   guitarFilters: FirebaseListObservable<any[]>;
   socialLinks: FirebaseListObservable<any[]>;
-  currentFilterTerm: string = "";
+  currentFilterTerm: string;
 
 
   constructor(private database: AngularFireDatabase) {
@@ -17,8 +17,20 @@ export class GuitarService {
   }
 
   getGuitars() {
-    console.log("Getting guitars");
-    return this.guitars
+    if (this.currentFilterTerm === "") {
+      console.log("none");
+      return this.guitars;
+    } else if (this.currentFilterTerm === "hollowbody") {
+      console.log("hollow");
+      return this.guitars = this.database.list('guitars', {
+        query: {
+          orderByChild: 'category',
+          equalTo: "hollowbody"
+        }
+      });
+    } else {
+      console.log("What?");
+    }
   }
 
   getGuitarFilters() {
@@ -40,5 +52,6 @@ export class GuitarService {
 
   setFilterTerm(passedFilterTerm){
     this.currentFilterTerm = passedFilterTerm;
+    console.log(this.currentFilterTerm);
   }
 }
