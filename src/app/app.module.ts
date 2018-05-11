@@ -11,6 +11,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { GuitarDetailComponent } from './guitar-detail/guitar-detail.component';
+import { FilteredGuitarListComponent } from './filtered-guitar-list/filtered-guitar-list.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +29,8 @@ export const firebaseConfig = {
     SocialLinkListComponent,
     // FilterResults,
     WelcomeComponent,
-    GuitarDetailComponent
+    GuitarDetailComponent,
+    FilteredGuitarListComponent
   ],
   imports: [
     BrowserModule,

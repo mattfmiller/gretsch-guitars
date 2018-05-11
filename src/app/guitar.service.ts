@@ -33,7 +33,7 @@ export class GuitarService {
   }
 
   getGuitarsByCategory(guitarCategory: string){
-    let returned = this.database.list('guitarList/0' + guitarCategory);
+    let returned = this.database.list('filteredGuitarList' + guitarCategory);
     return returned;
   }
 }
