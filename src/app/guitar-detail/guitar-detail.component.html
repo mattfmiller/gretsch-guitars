@@ -1,1 +1,66 @@
-<h3>{{(guitarToDisplay | async)?.name}}</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <h3>{{(guitarToDisplay | async)?.name}}</h3>
+      <p>SKU #{{(guitarToDisplay | async)?.modelNumber}}</p>
+    </div>
+    <div class="col-4">
+      <h4>${{(guitarToDisplay | async)?.price}}</h4>
+    </div>
+  </div>
+  <hr>
+  <img src="{{(guitarToDisplay | async)?.imageUrl}}" alt="picture of {{(guitarToDisplay | async)?.name}}">
+  <br>
+  <button class="button">LOCAL DELAERS</button>
+  <button class="button">ONLINE DEALERS</button>
+  <hr>
+  <div class="row">
+    <div class="col-6">
+      <ul>
+        <li>General</li>
+        <li>Body</li>
+        <li>Neck</li>
+        <li>Electronics</li>
+        <li>Hardware</li>
+        <li>Miscellaneous</li>
+      </ul>
+      <div class="row">
+        <div class="col-5">
+          <p><strong>Model Number</strong></p>
+        </div>
+        <div class="col-7">
+          {{(guitarToDisplay | async)?.modelNumber}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <p><strong>Series</strong></p>
+        </div>
+        <div class="col-7">
+          {{(guitarToDisplay | async)?.series}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <p><strong>Color</strong></p>
+        </div>
+        <div class="col-7">
+          {{(guitarToDisplay | async)?.color}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <p><strong>Orientation</strong></p>
+        </div>
+        <div class="col-7">
+          {{(guitarToDisplay | async)?.orientation}}
+        </div>
+      </div>
+      <h2>SUPPORT MATERIALS</h2>
+      <button class="form-control button">GRETSCH ELECTROMATIC 5 - YEAR ELECTRONIC PRODUCTS WARRANTY 1-2008</button>
+    </div>
+    <div class="col-6">
+      {{(guitarToDisplay | async)?.description}}
+    </div>
+  </div>
+</div>
