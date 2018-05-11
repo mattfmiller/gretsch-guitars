@@ -17,7 +17,7 @@ export class GuitarService {
   }
 
   getGuitars() {
-    return this.guitars 
+    return this.guitars
   }
 
   getGuitarFilters() {
@@ -30,6 +30,10 @@ export class GuitarService {
 
   getGuitarById(guitarId: string){
     return this.database.object('guitars/' + guitarId)
+  }
+
+  getGuitarsByCategory(guitarCategory: string){
+    return this.database.object('guitars/' + guitarCategory)
   }
 
 }

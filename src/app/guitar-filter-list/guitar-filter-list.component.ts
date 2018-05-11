@@ -4,6 +4,7 @@ import { GuitarService } from '../guitar.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-guitar-filter-list',
   templateUrl: './guitar-filter-list.component.html',
@@ -20,6 +21,7 @@ export class GuitarFilterListComponent implements OnInit {
   }
 
   goToFilteredGuitarList(clickedGuitarFilter: GuitarFilter) {
+    debugger;
     this.router.navigate(['guitar-list', clickedGuitarFilter.filterTerm]);
   }
 }

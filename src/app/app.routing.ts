@@ -10,7 +10,7 @@ const appRoutes: Routes = [
     component: WelcomeComponent
   },
   {
-    path: 'guitar-list/:filterTerm',
+    path: 'guitar-list/:category',
     component: GuitarListComponent
   },
   {
