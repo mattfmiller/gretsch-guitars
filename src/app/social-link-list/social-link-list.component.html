@@ -1,4 +1,4 @@
-<div class="col-3 float-left" *ngFor="let currentSocialLink of masterSocialLinkArray">
+<div class="col-3 float-left" *ngFor="let currentSocialLink of socialLinks | async">
   <div class="social-link-component">
     <a href="{{currentSocialLink.link}}" target="_blank"><img src="{{currentSocialLink.image}}" alt="{{currentSocialLink.associattedApp}}">
     <p>{{currentSocialLink.associatedApp}}</p></a>
