@@ -17,6 +17,7 @@ export class GuitarService {
   }
 
   getGuitars() {
+    console.log("Getting guitars");
     return this.guitars
   }
 
@@ -32,11 +33,12 @@ export class GuitarService {
     return this.database.object('guitars/' + guitarId)
   }
 
-  getGuitarsByCategory(guitarCategory: string){
-    console.log(guitarCategory);
-    let returned = this.database.list('guitars/' + guitarCategory);
-    console.log(returned);
-    return returned;
-  }
+  // getGuitarsByCategory(guitarCategory: string){
+  //   let returned = this.database.list('guitars/' + guitarCategory);
+  //   return returned;
+  // }
 
+  setFilterTerm(passedFilterTerm){
+    this.currentFilterTerm = passedFilterTerm;
+  }
 }

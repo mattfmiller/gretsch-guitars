@@ -1,7 +1,7 @@
 <div class="banner">
   <img src="https://images.ctfassets.net/3xaxfhpie9jb/51dAJlfknCWSOGAeQuyGyu/ca02f4e1f90bf17db5a3b19f6e8acae1/79e38-silver-sparkle-bg.jpg" alt="banner image">
 </div>
-<div class="col-4 float-left" *ngFor="let currentGuitarFilter of guitarFilters | async"(click)="goToFilteredGuitarList(currentGuitarFilter)">
+<div class="col-4 float-left" *ngFor="let currentGuitarFilter of guitarFilters | async" (click)="goToFilteredGuitarList(currentGuitarFilter)">
   <div class="guitar-list-filter-component">
     <a routerLink="guitar-list"><img src="{{currentGuitarFilter.image}}" alt="{{currentGuitarFilter.title}}"></a>
     <h4>{{currentGuitarFilter.title}}</h4>

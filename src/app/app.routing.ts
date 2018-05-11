@@ -10,7 +10,7 @@ const appRoutes: Routes = [
     component: WelcomeComponent
   },
   {
-    path: 'guitar-list/:category',
+    path: 'guitar-list',
     component: GuitarListComponent
   },
   {
