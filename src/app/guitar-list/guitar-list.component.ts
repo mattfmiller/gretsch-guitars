@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Guitar } from '../models/guitar.model';
 import { Router } from '@angular/router';
 import { GuitarService } from '../guitar.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-guitar-list',
@@ -12,7 +13,7 @@ import { GuitarService } from '../guitar.service';
 export class GuitarListComponent implements OnInit{
 
   constructor(private router: Router, private guitarService: GuitarService){}
-  guitars: Guitar[];
+  guitars: FirebaseListObservable<any[]>;
 
   // guitars: Guitar[] = [
   //   new Guitar("G6134T-CDG LIMITED EDITION PENGUIN™ WITH BIGSBY®", "https://www.fmicassets.com/Damroot/GretschVert/10001/2400509846_gtr_frt_001_rr.png", false, false, false, 1),

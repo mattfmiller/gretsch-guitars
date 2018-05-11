@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Guitar } from '../models/guitar.model';
 import { GuitarService } from '../guitar.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-guitar-detail',
