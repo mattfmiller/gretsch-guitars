@@ -32,6 +32,5 @@ export class GuitarFilterListComponent implements OnInit {
 
   passFilter(filterTerm: string) {
     this.guitarService.setFilter(filterTerm);
-    console.log(filterTerm)
   }
 }
