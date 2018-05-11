@@ -1,6 +1,6 @@
 # Gretsch Guitars
 
-#### A clone of http://www.gretschguitars.com that allows users view Gretsch guitars.
+#### A clone of www.gretschguitars.com that allows users view Gretsch guitars.
 
 #### By _**Matt Miller**_
 
