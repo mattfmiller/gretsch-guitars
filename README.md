@@ -10,7 +10,7 @@ This webpage is a clone of the Gretsch guitars webpage as of May 11, 2018. It wi
 
 ## Setup/Installation Requirements
 
-* View program by visiting:
+* View program by visiting: https://gretsch-guitars.firebaseapp.com/
 * To modify program, clone repository from https://github.com/mattfmiller/gretsch-guitars
 * Create a firebase database using the sample-guitars.json file located in the root directory.
 * Using your firebase database credentials, create a file `/src/app/api-keys.ts` of the form:<br>
