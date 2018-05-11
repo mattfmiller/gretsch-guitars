@@ -2,17 +2,6 @@
   background-color: #EEE8C6;
 }
 
-/* .banner {
-  height: 650px;
-  overflow: hidden;
-  margin-bottom: 25px;
-}
-
-.banner img {
-  margin-top: -50px;
-  width: 100vw;
-} */
-
 .header {
   background-image: url(http://www.fmicassets.com/platform/sites/live/gretsch/img/template/styled-header-bg-down.png);
   height: 170px;
@@ -40,4 +29,13 @@ li {
 li:hover {
   color: #cd4714;
   cursor: pointer;
+}
+
+li a {
+  color: #eee8c6;
+}
+
+li a:hover {
+  color: #cd4714;
+  text-decoration: none;
 }
