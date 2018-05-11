@@ -17,14 +17,16 @@ export class GuitarListComponent implements OnInit{
   constructor(private router: Router, private guitarService: GuitarService, private location: Location, private route: ActivatedRoute,){}
   // guitars: FirebaseListObservable<any[]>;
   guitarCategory: string = null;
-  guitarsToDisplayByCategory: FirebaseListObservable<any[]>;
+  guitarsToDisplayByCategory;
 
   ngOnInit(){
     // this.guitars = this.guitarService.getGuitars();
     this.route.params.forEach((urlParameters) => {
       this.guitarCategory = urlParameters['category'];
+      console.log(this.guitarCategory);
     });
-    this.guitarsToDisplayByCategory.push(this.guitarService.getGuitarsByCategory(this.guitarCategory));
+    this.guitarsToDisplayByCategory = this.guitarService.getGuitarsByCategory(this.guitarCategory);
+    console.log(typeOf this.guitarsToDisplayByCategory);
   }
 
   goToDetailPage(clickedGuitar) {

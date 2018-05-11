@@ -1,4 +1,4 @@
-<div class="col-4 float-left" *ngFor="let currentGuitar of guitars | async" (click)="goToDetailPage(currentGuitar)">
+<div class="col-4 float-left" *ngFor="let currentGuitar of guitarsToDisplayByCategory" (click)="goToDetailPage(currentGuitar)">
   <div class="guitar-list-component">
     <img src="{{currentGuitar.imageUrl}}" alt="photo of {{currentGuitar.name}}"><br>
     <p>{{currentGuitar.name}}</p>
