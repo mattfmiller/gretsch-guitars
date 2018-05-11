@@ -5,6 +5,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { GuitarDetailComponent } from './guitar-detail/guitar-detail.component';
 import { FilteredGuitarListComponent } from './filtered-guitar-list/filtered-guitar-list.component';
 import { GuitarListHollowComponent } from './guitar-list-hollow/guitar-list-hollow.component';
+import { GuitarListArtistComponent } from './guitar-list-artist/guitar-list-artist.component';
+import { GuitarListNewComponent } from './guitar-list-new/guitar-list-new.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +28,14 @@ const appRoutes: Routes = [
   {
     path: 'guitarList/hollowbody',
     component: GuitarListHollowComponent
+  },
+  {
+    path: 'guitarList/artist',
+    component: GuitarListArtistComponent
+  },
+  {
+    path: 'guitarList/',
+    component: GuitarListNewComponent
   }
 ];
 

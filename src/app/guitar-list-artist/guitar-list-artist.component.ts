@@ -5,18 +5,18 @@ import { GuitarService } from '../guitar.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-guitar-list-hollow',
-  templateUrl: './guitar-list-hollow.component.html',
-  styleUrls: ['./guitar-list-hollow.component.css'],
+  selector: 'app-guitar-list-artist',
+  templateUrl: './guitar-list-artist.component.html',
+  styleUrls: ['./guitar-list-artist.component.css'],
   providers: [GuitarService]
 })
-export class GuitarListHollowComponent implements OnInit {
+export class GuitarListArtistComponent implements OnInit {
 
   constructor(private router: Router, private guitarService: GuitarService){}
-  hollowGuitars: FirebaseListObservable<any[]>;
+  artistGuitars: FirebaseListObservable<any[]>;
 
   ngOnInit(){
-    this.hollowGuitars = this.guitarService.getHollowGuitars();
+    this.artistGuitars = this.guitarService.getArtistGuitars();
   }
 
   goToDetailPage(clickedGuitar) {

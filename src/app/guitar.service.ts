@@ -22,12 +22,38 @@ export class GuitarService {
 
   getHollowGuitars() {
     console.log("Hollow")
-    return this.guitars = this.database.list('guitars/', {
+    let returned = this.guitars = this.database.list('guitars/', {
       query: {
-        orderByChild: "catagory",
+        orderByChild: "category",
         equalTo: "hollowbody"
       }
     });
+    console.log(returned);
+    return returned;
+  }
+
+  getArtistGuitars() {
+    console.log("Artist")
+    let returned = this.guitars = this.database.list('guitars/', {
+      query: {
+        orderByChild: "category",
+        equalTo: "artist"
+      }
+    });
+    console.log(returned);
+    return returned;
+  }
+
+  getNewGuitars() {
+    console.log("Artist")
+    let returned = this.guitars = this.database.list('guitars/', {
+      query: {
+        orderByChild: "category",
+        equalTo: ""
+      }
+    });
+    console.log(returned);
+    return returned;
   }
 
   getGuitarFilters() {

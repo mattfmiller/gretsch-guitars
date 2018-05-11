@@ -1,8 +1,8 @@
-<div class="col-4 float-left" *ngFor="let currentGuitar of hollowGuitars | async" (click)="goToDetailPage(currentGuitar)">
+<div class="col-4 float-left" *ngFor="let currentGuitar of newGuitars | async" (click)="goToDetailPage(currentGuitar)">
   <div class="guitar-list-component">
     <img src="{{currentGuitar.imageUrl}}" alt="photo of {{currentGuitar.name}}"><br>
     <p>{{currentGuitar.name}}</p>
   </div>
 </div>
 
-<p>hollow works</p>
+<p>new works</p>
