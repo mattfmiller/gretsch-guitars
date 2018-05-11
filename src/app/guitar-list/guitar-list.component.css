@@ -1,10 +1,14 @@
 .guitar-list-component {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 65px;
+  height: 400px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .guitar-list-component img {
   background-color: #f3e5b4;
   padding: 30px;
   overflow: hidden;
+  height: 375px;
 }
