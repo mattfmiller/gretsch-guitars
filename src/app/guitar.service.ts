@@ -17,20 +17,7 @@ export class GuitarService {
   }
 
   getGuitars() {
-    if (this.currentFilterTerm === "") {
-      console.log("none");
-      return this.guitars;
-    } else if (this.currentFilterTerm === "hollowbody") {
-      console.log("hollow");
-      return this.guitars = this.database.list('guitars', {
-        query: {
-          orderByChild: 'category',
-          equalTo: "hollowbody"
-        }
-      });
-    } else {
-      console.log("What?");
-    }
+    return this.guitars;
   }
 
   getGuitarFilters() {
@@ -45,13 +32,8 @@ export class GuitarService {
     return this.database.object('guitars/' + guitarId)
   }
 
-  // getGuitarsByCategory(guitarCategory: string){
-  //   let returned = this.database.list('guitars/' + guitarCategory);
-  //   return returned;
-  // }
-
-  setFilterTerm(passedFilterTerm){
-    this.currentFilterTerm = passedFilterTerm;
-    console.log(this.currentFilterTerm);
+  getGuitarsByCategory(guitarCategory: string){
+    let returned = this.database.list('guitars/' + guitarCategory);
+    return returned;
   }
 }
